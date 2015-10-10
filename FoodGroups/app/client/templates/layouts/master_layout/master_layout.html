@@ -1,3 +1,27 @@
 <template name="MasterLayout">
-  {{> yield}}
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li role="presentation" class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="#">About</a></li>
+					<li role="presentation"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<h3 class="text-muted">Food Grouper</h3>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col sm-10">
+				{{> yield}}
+			</div>
+			<div class="col sm-1"></div>
+		</div>
+
+		<footer class="footer">
+			<p>&copy; Company 2014</p>
+		</footer>
+
+	</div> <!-- /container -->
 </template>

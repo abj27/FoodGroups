@@ -1,5 +1,20 @@
 <template name="Home">
-  <div class="home">
-    <h1>Find me in app/client/templates/home/home</h1>
-  </div>
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<h1>Jumbotron heading</h1>
+				<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+				<div class="row">
+					<div class="col-sm-6">
+						<p>{{#linkTo route="addRestaurant" class="btn btn-success"}}Register Your Restaurant{{/linkTo}}</p>
+					</div>
+					<div class="col-sm-6">
+						<p>{{#linkTo route="addCompany" class="btn btn-success"}}Register Your Company{{/linkTo}}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
 </template>
