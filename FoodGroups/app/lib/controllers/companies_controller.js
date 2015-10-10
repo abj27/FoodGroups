@@ -49,10 +49,10 @@ CompaniesController = RouteController.extend({
 		this.render();
 	},
 	edit:function(){
-		this.render("editCompany");
+		this.render("EditCompany");
 	},
 	add:function(){
-		this.render("addCompany");
+		this.render("AddCompany");
 	},
 	onAfterAction: function () {
 	},

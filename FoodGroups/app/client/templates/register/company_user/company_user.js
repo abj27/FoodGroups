@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Add: Event Handlers */
+/* CompanyUser: Event Handlers */
 /*****************************************************************************/
-Template.Add.events({
+Template.CompanyUser.events({
 });
 
 /*****************************************************************************/
-/* Add: Helpers */
+/* CompanyUser: Helpers */
 /*****************************************************************************/
-Template.Add.helpers({
+Template.CompanyUser.helpers({
 });
 
 /*****************************************************************************/
-/* Add: Lifecycle Hooks */
+/* CompanyUser: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Add.onCreated(function () {
+Template.CompanyUser.onCreated(function () {
 });
 
-Template.Add.onRendered(function () {
+Template.CompanyUser.onRendered(function () {
 });
 
-Template.Add.onDestroyed(function () {
+Template.CompanyUser.onDestroyed(function () {
 });

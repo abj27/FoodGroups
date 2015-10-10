@@ -10,9 +10,5 @@
 	"dontLoad": [ ".meteor"   ],
 	"plugins": {
 		"meteor": {}
-
-
 	}
-
-
 }

@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Companies: Event Handlers */
+/* Edit: Event Handlers */
 /*****************************************************************************/
-Template.Companies.events({
+Template.EditRestaurant.events({
 });
 
 /*****************************************************************************/
-/* Companies: Helpers */
+/* Edit: Helpers */
 /*****************************************************************************/
-Template.Companies.helpers({
+Template.EditRestaurant.helpers({
 });
 
 /*****************************************************************************/
-/* Companies: Lifecycle Hooks */
+/* Edit: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Companies.onCreated(function () {
+Template.EditRestaurant.onCreated(function () {
 });
 
-Template.Companies.onRendered(function () {
+Template.EditRestaurant.onRendered(function () {
 });
 
-Template.Companies.onDestroyed(function () {
+Template.EditRestaurant.onDestroyed(function () {
 });

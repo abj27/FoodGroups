@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Edit: Event Handlers */
+/* RestaurantAdmin: Event Handlers */
 /*****************************************************************************/
-Template.Edit.events({
+Template.RestaurantAdmin.events({
 });
 
 /*****************************************************************************/
-/* Edit: Helpers */
+/* RestaurantAdmin: Helpers */
 /*****************************************************************************/
-Template.Edit.helpers({
+Template.RestaurantAdmin.helpers({
 });
 
 /*****************************************************************************/
-/* Edit: Lifecycle Hooks */
+/* RestaurantAdmin: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Edit.onCreated(function () {
+Template.RestaurantAdmin.onCreated(function () {
 });
 
-Template.Edit.onRendered(function () {
+Template.RestaurantAdmin.onRendered(function () {
 });
 
-Template.Edit.onDestroyed(function () {
+Template.RestaurantAdmin.onDestroyed(function () {
 });

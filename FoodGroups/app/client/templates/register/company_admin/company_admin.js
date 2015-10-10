@@ -1,23 +1,23 @@
 /*****************************************************************************/
-/* Restaurant: Event Handlers */
+/* CompanyAdmin: Event Handlers */
 /*****************************************************************************/
-Template.Restaurant.events({
+Template.CompanyAdmin.events({
 });
 
 /*****************************************************************************/
-/* Restaurant: Helpers */
+/* CompanyAdmin: Helpers */
 /*****************************************************************************/
-Template.Restaurant.helpers({
+Template.CompanyAdmin.helpers({
 });
 
 /*****************************************************************************/
-/* Restaurant: Lifecycle Hooks */
+/* CompanyAdmin: Lifecycle Hooks */
 /*****************************************************************************/
-Template.Restaurant.onCreated(function () {
+Template.CompanyAdmin.onCreated(function () {
 });
 
-Template.Restaurant.onRendered(function () {
+Template.CompanyAdmin.onRendered(function () {
 });
 
-Template.Restaurant.onDestroyed(function () {
+Template.CompanyAdmin.onDestroyed(function () {
 });

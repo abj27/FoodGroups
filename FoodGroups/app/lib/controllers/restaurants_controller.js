@@ -6,7 +6,6 @@ RestaurantsController = RouteController.extend({
 	// this.subscribe('item', this.params._id).wait();
 
 	subscriptions: function() {
-	 this.subscribe('restaurants', this.params._id).wait();
 	},
 
 	// Subscriptions or other things we want to "wait" on. This also
@@ -24,7 +23,6 @@ RestaurantsController = RouteController.extend({
 		// return Posts.findOne({_id: this.params._id});
 
 	data: function () {
-		return Restaurants.findOne(this.params._id);
 	},
 
 		// You can provide any of the hook options
@@ -46,12 +44,13 @@ RestaurantsController = RouteController.extend({
 		// regions automatically.
 		// Example:
 		//  action: 'myActionFunction'
-	edit: function(){
-		this.render("editRestaurant");
-	},
 	add: function(){
-		this.render("addRestaurant");
+		this.render("AddRestaurant");	
 	},
+	edit:function(){
+		this.render("EditRestaurant");
+	},
+
 	action: function () {
 		this.render();
 	},
