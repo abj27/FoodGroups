@@ -50,6 +50,12 @@ RestaurantsController = RouteController.extend({
 	edit:function(){
 		this.render("EditRestaurant");
 	},
+	dashboard:function(){
+		this.render("RestaurantDashboard");
+	},
+	registerAdmin:function(){
+		this.render("RestaurantAdmin");
+	},
 
 	action: function () {
 		this.render();

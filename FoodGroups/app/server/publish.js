@@ -8,3 +8,7 @@ Meteor.publish('restaurants', function () {
 Meteor.publish('companies', function () {
   return Companies.find();
 });
+
+Meteor.publish('orders', function () {
+  return Orders.find();
+});

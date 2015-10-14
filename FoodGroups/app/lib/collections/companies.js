@@ -1,5 +1,4 @@
 Companies = new Mongo.Collection('companies');
-
 CompaniesSchema = new SimpleSchema({
 	Name:{
 		type:String,
@@ -14,10 +13,17 @@ CompaniesSchema = new SimpleSchema({
 	Phone:{
 		type:String,
 		label:"Phone number"
+	},
+	UserId:{
+		type: String,
+		label:"UserId",
+		autoValue:function(){
+			if(this.isInsert){
+				return this.userId;
+			}
+		}
 	}
 });
-Companies.attachSchema(CompaniesSchema);
-
 if (Meteor.isServer) {
   Companies.allow({
     insert: function (userId, doc) {

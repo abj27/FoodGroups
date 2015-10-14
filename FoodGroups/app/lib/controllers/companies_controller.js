@@ -51,8 +51,14 @@ CompaniesController = RouteController.extend({
 	edit:function(){
 		this.render("EditCompany");
 	},
+	dashboard:function(){
+		this.render("CompanyDashboard");
+	},
 	add:function(){
 		this.render("AddCompany");
+	},
+	registerAdmin:function(){
+		this.render("CompanyAdmin");
 	},
 	onAfterAction: function () {
 	},

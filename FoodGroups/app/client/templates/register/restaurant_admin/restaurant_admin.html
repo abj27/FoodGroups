@@ -1,5 +1,43 @@
 <template name="RestaurantAdmin">
-  <div class="restaurant-admin">
-    <h1>Find me in app/client/templates/register/restaurant_admin/restaurant_admin</h1>
-  </div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+		<form class="form-horizontal" action='' method="POST">
+			<fieldset>
+				<div id="legend">
+					<legend class="">Register</legend>
+				</div>
+
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="text" class="form-control" id="email" name="email" placeholder="" >
+				</div>
+
+				<div class="form-group">
+					<label class="control-label" for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="" >
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="restaurantName">Restaurant Name</label>
+					<input type="text" class="form-control" id="restaurantName" name="restaurantName" placeholder="" >
+				</div>
+
+				<div class="form-group">
+					<label class="control-label" for="restaurantAddress">Restaurant Address</label>
+					<input type="text" class="form-control" id="restaurantAddress" name="restaurantAddress" placeholder="" >
+				</div>
+				<div class="form-group">
+					<label class="control-label" for="restaurantAddress">Restaurant Phone Number</label>
+					<input type="text" class="form-control" id="restaurantPhone" name="restaurantPhone" placeholder="" >
+				</div>
+
+				<div class="form-group">
+					<input type="submit" class="btn btn-success" value="Register">
+				</div>
+
+			</fieldset>
+		</form> 
+		<div class="col-sm-2"></div>
+	</div>	
+	</div>
 </template>

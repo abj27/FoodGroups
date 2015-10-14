@@ -2,6 +2,9 @@
 /* CompanyUser: Event Handlers */
 /*****************************************************************************/
 Template.CompanyUser.events({
+	"submit form":function(event){
+		event.preventDefault();
+	}
 });
 
 /*****************************************************************************/

@@ -10,13 +10,19 @@
 									{{#linkTo route="home"}}Food Grouper{{/linkTo}}
 								</h3>
 							</div>
-						<div class="col-sm-8">
-							<form class="navbar-search pull-right">
-								<input type="text" class="span2" placeholder="Login">
-								<input type="text" class="span2" placeholder="Password">
-								<input type="submit" value="Login" class="btn"/>
-							</form> 
-						</div>
+							{{#if currentUser}}
+									<form class="navbar-search pull-right logout">
+										<input type="submit" class="btn" value="logout">
+									</form>		
+								{{else}}
+								<div class="col-sm-8">
+									<form class="navbar-search pull-right login">
+										<input type="text" class="span2" name="email" placeholder="Email">
+										<input type="password" class="span2" name="password" placeholder="Password">
+										<input type="submit" value="login" class="btn"/>
+									</form> 
+								</div>
+							{{/if}}
 						</div>						
 					</div>
 				</div>
