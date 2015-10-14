@@ -1,0 +1,69 @@
+<template name="MakeOrder">
+	<div class="row">
+		<div class="col-sm-6">
+			<center>
+				<strong> {{Name}}</strong>
+			</center>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Price</th>
+						<th>AddToOrder</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each MenuItems}}
+						<tr>
+							<td>{{name}} </td>
+							<td>{{description}}</td>
+							<td>{{price}}</td>
+							<td><button class="btn btn-primary addToOrder" id={{@index}}>Add</button></td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+
+		<div class="col-sm-6">
+			<center>
+				<strong>Order </strong>
+			</center>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each OrderItems}}
+						<tr>
+							<td>{{name}} </td>
+							<td>{{price}}</td>
+						</tr>
+					{{/each}}
+					<tr>
+						<td>Total Price:</td>
+						<td>{{totalPrice}}</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><button id="approveOrder" class="btn btn-primary">Approve</button></td>
+					</tr>
+					<tr>
+						<td>I want this before</td>
+						<td>
+							<select class="form-control time">
+								{{#each futureHours}}
+									<option value="{{time}}">{{time}}</option>
+								{{/each}}
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>

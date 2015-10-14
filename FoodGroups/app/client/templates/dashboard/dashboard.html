@@ -1,0 +1,51 @@
+<template name="Dashboard">
+	{{#if isRestaurantAdmin}}
+		<div class="row">
+			<h3>
+				{{RestaurantName}}
+			</h3>
+			<a href="/editMenu" class="btn btn-primary"> Edit Menu </a>
+			{{#if AvailableOrders}}
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>ExpectedDeliveryHour</th>
+						<th>Check</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each OpenOrders}}
+					<tr>
+						<td>{{Company}}</td>
+						<td>{{DeliveryHour}}</td>
+						<td><a class="btn btn-primary" href="/checkOrder/{{_id}}">CheckOrder</a></td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table> 
+			{{/if}}
+		</div>
+		{{else}}
+		{{#if isCompanyAdmin}}
+			Your company have been added thanks for registering.
+		{{/if}}
+		<div class="row">
+			<div class="col-sm-3"><strong>Company name: {{companyName}}</strong> </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8">
+				{{#if pendingOrders}}
+					You have pending orders.
+					{{else}}
+					<strong> Available restaurants </strong>
+					{{#each restaurants}}
+						<a href="/makeOrder/{{_id}}" class="btn btn-primary">{{Name}}</a>
+					{{/each}}
+				{{/if}}
+			</div>
+			<div class="col-sm-4">
+			</div>
+		</div>
+	{{/if}}
+</template>
